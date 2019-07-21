@@ -1,11 +1,11 @@
-# The code prints 7, as the return value of the method call is never saved as it
-# doesn't change the initial variable.
+# The code prints 7, as the a assigned in the method is in different scope than
+# the original a variable, so the initial a variable is not changed.
 
 a = 7
 
 def my_value(b)
-  b += 10
+  a = b
 end
 
-my_value(a)
-puts a 
+my_value(a + 5)
+puts a
