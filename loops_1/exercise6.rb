@@ -1,4 +1,4 @@
-numbers = (1..99).to_a
+numbers = (0..99).to_a
 i = 0
 while i < 5
   puts numbers.sample
